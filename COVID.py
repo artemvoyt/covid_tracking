@@ -123,7 +123,7 @@ diff.to_excel("COVID_raw.xlsx")
 diff_1.to_excel("COVID_1st_derivative.xlsx")
 
 with open('last_updated.txt', 'w') as f:
-    f.write(datetime.now())
+    f.write(str(datetime.now()))
 
 # In[ ]:
 
