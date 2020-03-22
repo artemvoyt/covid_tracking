@@ -5,7 +5,7 @@
 
 
 import pandas as pd
-from datetime import timedelta, date
+from datetime import timedelta, date, datetime
 
 def daterange(date1, date2):
     for n in range(int ((date2 - date1).days)+1):
@@ -122,6 +122,8 @@ diff_2.to_csv(csv_name)
 diff.to_excel("COVID_raw.xlsx")
 diff_1.to_excel("COVID_1st_derivative.xlsx")
 
+with open('last_updated.txt', 'w') as f:
+    f.write(datetime.now())
 
 # In[ ]:
 
